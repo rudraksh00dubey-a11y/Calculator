@@ -102,7 +102,7 @@ function App() {
 
   useEffect(() => {
     function keyboard(e) {
-      if (/^\d+(\.\d+)?$/.test(e.key)) {
+      if (/^[0-9.]$/.test(e.key)) {
         appendNum(e.key);
       } else if (e.key == "Backspace") {
         del();
